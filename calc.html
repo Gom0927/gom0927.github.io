@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="shortcut icon" href="./assets/images/favicon.ico">
+        <link rel="stylesheet" href="./assets/css/calc.css">    
+        <link rel="stylesheet" href="./assets/css/templatemo-art-factory.css">
+    </head>
+    <body>
+        <li class="scroll-to-section"><a href="index.html#welcome" class="active">Back to Main</a></li>
+        <main id='calc'>            
+            <h3 id='result' class='e'></h3>
+            <div class="button-wrap" class='e'>
+                <button onclick='reset()' class="ac">AC</button>
+                <button onclick='append(content=content+div)'>/</button>
+                <button onclick='append(content=content+seven)'>7</button>
+                <button onclick='append(content=content+eight)'>8</button>
+                <button onclick='append(content=content+nine)'>9</button>
+                <button onclick='append(content=content+mul)'>X</button>
+                <button onclick='append(content=content+four)'>4</button>
+                <button onclick='append(content=content+five)'>5</button>
+                <button onclick='append(content=content+six)'>6</button>
+                <button onclick='append(content=content+min)' data-type="operator">-</button>
+                <button onclick='append(content=content+one)'>1</button>
+                <button onclick='append(content=content+two)'>2</button>
+                <button onclick='append(content=content+three)'>3</button>
+                <button onclick='append(content=content+plus)' data-type="operator">+</button>
+                <button onclick='append(content=content+zero)' class="zero">0</button>
+                <button onclick='append(content=content+point)'>.</button>
+                <button onclick="try{append(content=eval(content));}catch(e){append(ERROR)}" data-type="equals" class="equals">=</button>
+            </div>
+        </main>
+        <script src="./assets/js/calc.js"></script>
+    </body>
+</html>
