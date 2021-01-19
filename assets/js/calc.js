@@ -26,7 +26,6 @@ function reset() {
 }
 onkeydown = function(event) {
     var code = event.keyCode
-    console.log(code)
     if(code==105 || code==57) append(content=content+nine)
     else if(code==104 || code==56) append(content=content+eight)
     else if(code==103 || code==55) append(content=content+seven)
@@ -49,4 +48,5 @@ onkeydown = function(event) {
     else if(code==109 || code==189) append(content=content+min)
     else if(code==106 || code==56) append(content=content+mul)
     else if(code==111 || code==191) append(content=content+div)
+    else if(code==27) reset()
 }
